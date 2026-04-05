@@ -54,7 +54,7 @@ Developed by **Hooria Sadiq **
 
 ## 📌 Live Demo
 
-(https://hooriasadiq.github.io/syntecxhub_faq_accordion/)
+( https://hooriasadiq.github.io/syntecxhub_faq_accordion/ )
 
 ---
 
