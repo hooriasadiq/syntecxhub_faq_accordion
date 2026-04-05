@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is this project about?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>This is a modern FAQ accordion with smooth animations and responsive design.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Does it work on mobile?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes! It is fully responsive and works perfectly on all devices.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I customize it?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely! You can change colors, fonts, and animations easily.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(q => {
+  q.addEventListener("click", () => {
+    const item = q.parentElement;
+
+    // Close others (optional for clean UX)
+    document.querySelectorAll(".faq-item").forEach(el => {
+      if (el !== item) {
+        el.classList.remove("active");
+      }
+    });
+
+    item.classList.toggle("active");
+  });
+});
+</script>
+</body>
+</html>
